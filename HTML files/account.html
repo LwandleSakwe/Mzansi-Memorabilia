@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
+    <title>Account | Mzansi Memorabilia</title>
 </head>
+
+<body>
+    <!--Header has the company logo and name and the navigation-->
 <header>
 <h1>Account</h1>
 <p>Begin your Mzansi Memorabilia journey by opening your own account</p>
     <hr>
+
+    <!--Navigation menu linking all the pages of the website-->
     <nav>
         <a href="index.html">Home</a> |
         <a href="about.html">About</a> |
@@ -17,49 +22,65 @@
         <a href="account.html">Account</a>
     </nav>
    <hr>
-
 </header>
 
-<body>
+    <!--Main part with the account registration form-->
 <main>
+    <!--Sign up section-->
     <section>
-        <h2>Sign Up</h2>
+
+        <h2>Create new account</h2>
+        <p>Sign up to create your Mzansi Memorabilia account for personalisation, tracking order and exclusive offers.</p>
+
+        <!--Form collecting details to create an account-->
         <form>
+            <!--Name field-->
             <p>Name:</p>
             <input type="text" name="name" required>
-
             <br><br>
 
+            <!--Email field-->
             <p>Email address:</p>
             <input type="email" name="email" required>
-
             <br><br>
 
+            <!--Phone number field-->
             <p>Phone Number:</p>
             <input type="tel" name="phone" required>
-
             <br><br>
 
+            <!--Password and confirm password fields-->
             <p>Password:</p>
             <input type="password" name="password" required>
-
             <br><br>
 
+            <!--Renter password to make sure it matches-->
             <p>Confirm Password:</p>
             <input type="password" name="confirm_password" required>
-
             <br><br>
 
-            <p>
-                <input type="checkbox" required>
-                I agree to the terms and conditions
-            </p>
-
-            <input type="submit" value="Create Account">
+        <!-- Terms and conditions checkbox: user must agree before submitting -->
+        <p>
+            <input type="checkbox" name="terms" required>
+            I agree to the <a href="#">Terms and Conditions</a> of Mzansi Memorabilia
+        </p>
+        <br>
+        
+        <!-- Submit button: creates the account when clicked -->
+        <input type="submit" value="Create Account">
         </form>
-    </section>
-</main>
-<hr>
+        </section>
+        <hr>
+        
+        <!-- Already have an account section for returning users -->
+        <section>
+            <h2>Already Have an Account?</h2>
+            <p>If you already have an account, please <a href="#">log in here</a> to access your profile and orders.</p>
+        </section>
+        
+        </main>
+        <hr>
+
 <footer>
         <p>Email: info@mzansimemorabilia.co.za</p>
         <p>12 Umhlanga Ridge Boulevard</p>
